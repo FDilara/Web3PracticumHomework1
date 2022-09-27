@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
+/***My Notes***/
 /*One environment is "JavaScript Virtual Machine" 
  *so this means that we are able to deploy our smart contract 
  *not into the real blockchain network
@@ -16,6 +17,7 @@ pragma solidity ^0.8.7;
  *which means more memory usage. 
  *The transaction fee is high.
  */
+
 contract FeeCollector {
     //Events
     event EtherSent(address from, uint amount);
@@ -43,7 +45,7 @@ contract FeeCollector {
         _;
     }
 
-    receive() payable external  {
+    receive() payable external  minEtherAmount() {
         //How much ether was sent to the smart contract  - "msg.value"
         
         //Local variables
