@@ -1,2 +1,2 @@
 # Web3PracticumHomework1
-FeeCollector_Homework1
+www.patika.dev FeeCollector_Homework1 
